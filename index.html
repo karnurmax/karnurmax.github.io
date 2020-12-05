@@ -63,15 +63,49 @@
             background-color: black;
             flex-grow: 1;
         }
+        
+        .console-body>ul {
+            list-style: none;
+        }
+        
+        .console-body>ul>li>span {
+            color: wheat;
+        }
+        
+        .console-body input {
+            background-color: #000;
+            border: none;
+            color: white;
+            outline: none;
+        }
     </style>
 </head>
 
 <body>
     <div class="console-div">
         <div class="console-header">
-            <div class="icon"></div> <b style="margin-left: 10px;">console</b>
+            <div class="icon"></div> <b style="margin-left: 10px;">interactive console</b>
         </div>
-        <div class="console-body"></div>
+        <div class="console-body">
+            <ul>
+                <li>
+                    <span>~karnurmax:#/</span>
+                    <input value="қош келдіңіз" type="text" autocorrect="off" autocapitalize="none" disabled="disabled">
+                </li>
+                <li>
+                    <span>~karnurmax:#/</span>
+                    <input value="добро пожаловать" type="text" autocorrect="off" autocapitalize="none" disabled="disabled">
+                </li>
+                <li>
+                    <span>~karnurmax:#/</span>
+                    <input value="welcome" type="text" autocorrect="off" autocapitalize="none" disabled="disabled">
+                </li>
+                <li>
+                    <span>~karnurmax:#/</span>
+                    <input autofocus="autofocus" placeholder="Type help" type="text" autocorrect="off" autocapitalize="none">
+                </li>
+            </ul>
+        </div>
     </div>
 </body>
 
