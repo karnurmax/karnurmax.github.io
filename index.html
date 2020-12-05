@@ -46,7 +46,17 @@
             background-color: white;
             height: 30px;
             color: black;
-            line-height: 30px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .console-header .icon {
+            background: url(./cmd-icon.png);
+            background-repeat: no-repeat;
+            height: 26px;
+            width: 32px;
+            border: 1px solid;
+            margin-left: 2px;
         }
         
         .console-body {
@@ -59,7 +69,7 @@
 <body>
     <div class="console-div">
         <div class="console-header">
-            <b style="margin-left: 10px;">console</b>
+            <div class="icon"></div> <b style="margin-left: 10px;">console</b>
         </div>
         <div class="console-body"></div>
     </div>
